@@ -20,6 +20,7 @@
                 <action android:name="android.intent.action.VIEW"></action>
 
                 <category android:name="android.intent.category.DEFAULT"></category>
+
             </intent-filter>
         </activity>
     </application>

@@ -16,10 +16,15 @@ public class SumActivity extends AppCompatActivity {
     }
 
     private void getNumbersFromExtra(){
+        int number_1 = 10;
+        int number_2 = 20;
         Intent sum_activity_intent = getIntent();
         Bundle cal_sum = sum_activity_intent.getExtras();
-        int number_1 = cal_sum.getInt("number_1");
-        int number_2 = cal_sum.getInt("number_2");
+        if(cal_sum != null){
+            number_1 = cal_sum.getInt("number_1");
+            number_2 = cal_sum.getInt("number_2");
+
+        }
         calSumAndDisplay(number_1, number_2);
     }
     
